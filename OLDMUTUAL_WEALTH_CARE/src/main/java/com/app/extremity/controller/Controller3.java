@@ -24,9 +24,6 @@ public class Controller3 {
 	@Autowired
 	HomeServiceImpl service;
 	 
-	//@RequestMapping("/assign")
-	//public ResponseEntity<Advisors> assignAdv(@RequestParam(name="userPin") String userpin,@RequestParam(name="advisorAddPin")String advisorAddPin){
-	//@RequestMapping("/assign")	
 	public void assignAdv(@RequestParam(name="advisorAddPin") String adpin,HttpServletResponse response) throws IOException{
 	
 		int pincode=Integer.parseInt(adpin);
@@ -60,6 +57,7 @@ public class Controller3 {
 		System.out.println(adid); 
 		System.out.println(uid); 
 		service.assignAdvisor(adid, uid);
+		System.out.println("=====================================================");
 		return "assignAdvisortoUser";
 	} 
 	

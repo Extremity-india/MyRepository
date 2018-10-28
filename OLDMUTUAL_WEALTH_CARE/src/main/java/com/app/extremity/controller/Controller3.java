@@ -58,6 +58,7 @@ public class Controller3 {
 		System.out.println(uid); 
 		service.assignAdvisor(adid, uid);
 		System.out.println("=====================change in localbranch================================");
+		System.out.println("this is local changes");
 		return "assignAdvisortoUser";
 	} 
 	
